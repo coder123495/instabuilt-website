@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>InstaBuilt | Future Wooden Homes</title>
+
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* BODY */
+body {
+    background: white;
+    color: #1b1b1b;
+}
+
+
+/* NAVBAR */
+nav {
+
+    width: 100%;
+    padding: 25px;
+
+    background: rgba(255,255,255,0.95);
+
+    text-align: center;
+
+    border-bottom: 3px solid #3aa76d;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 10;
+
+}
+
+
+nav h1 {
+
+    color: #2e8b57;
+
+    font-size: 50px;
+
+    letter-spacing: 4px;
+
+}
+
+
+
+/* HERO SECTION */
+
+.hero {
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+
+    background-image: url("https://underthehardhat.org/wp-content/uploads/2024/08/Instabuilt-header.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+    color:white;
+
+}
+
+
+/* DARK IMAGE FILTER */
+
+.hero::before {
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+
+    background:rgba(0,40,20,0.55);
+
+}
+
+
+
+/* TEXT ABOVE IMAGE */
+
+.hero h2,
+.hero p,
+.hero button {
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+
+/* MAIN TITLE */
+
+.hero h2 {
+
+    font-size:80px;
+
+    margin-bottom:25px;
+
+    animation: slideDown 1s;
+
+}
+
+
+/* DESCRIPTION */
+
+.hero p {
+
+    font-size:30px;
+
+    max-width:900px;
+
+    line-height:1.5;
+
+    margin-bottom:40px;
+
+    animation: fade 2s;
+
+}
+
+
+
+/* BUTTONS */
+
+.buttons {
+
+    z-index:1;
+
+}
+
+
+button {
+
+
+    padding:20px 45px;
+
+    margin:15px;
+
+
+    background:#3aa76d;
+
+    color:white;
+
+
+    border:none;
+
+    border-radius:12px;
+
+
+    font-size:22px;
+
+
+    cursor:pointer;
+
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover {
+
+
+    background:#236b43;
+
+    transform:scale(1.08);
+
+}
+
+
+
+/* ABOUT SECTION */
+
+.about {
+
+
+    padding:100px 50px;
+
+    text-align:center;
+
+}
+
+
+
+.about h2 {
+
+
+    font-size:55px;
+
+    color:#2e8b57;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.about p {
+
+
+    font-size:26px;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    line-height:1.7;
+
+}
+
+
+
+/* FEATURES */
+
+
+.features {
+
+
+    background:#eaf5ed;
+
+    padding:100px 50px;
+
+    text-align:center;
+
+}
+
+
+.features h2 {
+
+
+    font-size:55px;
+
+    color:#2e8b57;
+
+}
+
+
+
+.cards {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+
+
+.card {
+
+
+    background:white;
+
+
+    width:300px;
+
+
+    padding:40px;
+
+
+    border-radius:15px;
+
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+
+    transition:0.3s;
+
+}
+
+
+
+.card:hover {
+
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.card h3 {
+
+
+    color:#2e8b57;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.card p {
+
+
+    font-size:20px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+
+
+    background:#2e8b57;
+
+    color:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    font-size:20px;
+
+}
+
+
+
+/* ANIMATIONS */
+
+
+@keyframes slideDown {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(-50px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes fade {
+
+
+    from {
+
+        opacity:0;
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+
+.hero h2 {
+
+font-size:45px;
+
+}
+
+
+.hero p {
+
+font-size:20px;
+
+}
+
+
+nav h1 {
+
+font-size:35px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h1>InstaBuilt</h1>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+
+<section class="hero">
+
+
+<h2>Build Smarter.<br>Build Greener.</h2>
+
+
+<p>
+Modern wooden homes created with sustainable materials,
+advanced technology, and innovative construction.
+</p>
+
+
+
+<div class="buttons">
+
+
+<button onclick="openPage('homes.html')">
+Explore Homes
+</button>
+
+
+<button onclick="openPage('wood.html')">
+Why Wood?
+</button>
+
+
+<button onclick="openPage('contact.html')">
+Contact
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section class="about">
+
+
+<h2>The Future Of Housing</h2>
+
+
+<p>
+
+InstaBuilt creates high-quality modular homes using
+wood as a primary construction material. Wooden homes
+combine beauty, efficiency, sustainability, and strength
+to create comfortable spaces for modern living.
+
+</p>
+
+
+</section>
+
+
+
+
+
+<!-- FEATURES -->
+
+
+<section class="features">
+
+
+<h2>Why Choose InstaBuilt?</h2>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>🌱 Sustainable</h3>
+
+<p>
+Wood is renewable and helps reduce environmental impact.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>⚡ Faster Building</h3>
+
+<p>
+Modular wooden construction allows homes to be completed faster.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>🏡 Modern Design</h3>
+
+<p>
+Beautiful homes designed for comfort and future living.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+<footer>
+
+© 2026 InstaBuilt | Sustainable Wooden Homes
+
+</footer>
+
+
+
+
+
+<script>
+
+
+function openPage(page){
+
+window.location.href = page;
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
