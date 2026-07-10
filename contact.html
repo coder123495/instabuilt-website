@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact InstaBuilt</title>
+
+
+<style>
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body {
+
+    background:#f5f8f5;
+
+    color:#1b1b1b;
+
+}
+
+
+/* NAV */
+
+nav {
+
+    background:white;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-bottom:3px solid #3aa76d;
+
+}
+
+
+nav h1 {
+
+    font-size:55px;
+
+    color:#2e8b57;
+
+}
+
+
+
+/* HERO */
+
+
+.hero {
+
+    padding:90px 30px;
+
+    background:#eaf5ed;
+
+    text-align:center;
+
+}
+
+
+.hero h2 {
+
+    font-size:70px;
+
+    color:#2e8b57;
+
+}
+
+
+.hero p {
+
+    font-size:28px;
+
+    max-width:900px;
+
+    margin:25px auto;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* FORM SECTION */
+
+
+.contact-area {
+
+
+    display:flex;
+
+    justify-content:center;
+
+    padding:80px 30px;
+
+}
+
+
+
+.form-box {
+
+
+    background:white;
+
+    width:650px;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+}
+
+
+
+.form-box h2 {
+
+    text-align:center;
+
+    font-size:45px;
+
+    color:#2e8b57;
+
+    margin-bottom:30px;
+
+}
+
+
+
+input,
+select,
+textarea {
+
+
+    width:100%;
+
+    padding:18px;
+
+    margin:12px 0;
+
+    font-size:18px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+}
+
+
+
+textarea {
+
+    height:150px;
+
+}
+
+
+
+button {
+
+
+    width:100%;
+
+    padding:18px;
+
+    background:#3aa76d;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+
+
+button:hover {
+
+    background:#236b43;
+
+}
+
+
+
+
+
+/* FAQ */
+
+
+.faq {
+
+    background:#2e8b57;
+
+    color:white;
+
+    padding:80px 40px;
+
+}
+
+
+
+.faq h2 {
+
+    text-align:center;
+
+    font-size:55px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.question {
+
+
+    background:white;
+
+    color:#222;
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    padding:30px;
+
+    border-radius:15px;
+
+}
+
+
+
+.question h3 {
+
+    color:#2e8b57;
+
+    font-size:28px;
+
+}
+
+
+
+.question p {
+
+    font-size:20px;
+
+    margin-top:15px;
+
+    line-height:1.6;
+
+}
+
+
+
+/* LOCATION */
+
+
+.location {
+
+    padding:70px;
+
+    text-align:center;
+
+}
+
+
+
+.location h2 {
+
+    font-size:45px;
+
+    color:#2e8b57;
+
+}
+
+
+
+.location p {
+
+    font-size:22px;
+
+    margin:15px;
+
+}
+
+
+
+
+
+footer {
+
+    background:#1f6b43;
+
+    color:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    font-size:20px;
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<nav>
+
+<h1>InstaBuilt</h1>
+
+</nav>
+
+
+
+
+
+<section class="hero">
+
+
+<h2>Let's Build Your Future Home</h2>
+
+
+<p>
+
+Have a project idea? Tell InstaBuilt about your dream home
+and our team can help turn your vision into reality.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+<section class="contact-area">
+
+
+<div class="form-box">
+
+
+<h2>Submit Your Project</h2>
+
+
+
+<form onsubmit="sendMessage(event)">
+
+
+
+<input type="text" placeholder="Full Name" required>
+
+
+
+<input type="email" placeholder="Email Address" required>
+
+
+
+<input type="tel" placeholder="Phone Number">
+
+
+
+<select>
+
+<option>Select Home Type</option>
+
+<option>1 Bedroom Pop-Up Home</option>
+
+<option>2 Bedroom Pop-Up Home</option>
+
+<option>3 Bedroom Pop-Up Home</option>
+
+<option>Custom Project</option>
+
+</select>
+
+
+
+<select>
+
+<option>Select Budget</option>
+
+<option>€25,000 - €50,000</option>
+
+<option>€50,000 - €100,000</option>
+
+<option>€100,000+</option>
+
+</select>
+
+
+
+<textarea placeholder="Describe your project"></textarea>
+
+
+
+<button>
+
+Send Project Request
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="faq">
+
+
+<h2>Frequently Asked Questions</h2>
+
+
+
+<div class="question">
+
+<h3>Why does InstaBuilt use wood?</h3>
+
+<p>
+Wood allows efficient construction, sustainability,
+and excellent energy performance when used correctly.
+</p>
+
+</div>
+
+
+
+<div class="question">
+
+<h3>How fast can a home be built?</h3>
+
+<p>
+Modular construction can reduce building time because
+many components are prepared before reaching the site.
+</p>
+
+</div>
+
+
+
+<div class="question">
+
+<h3>Can homes be customized?</h3>
+
+<p>
+Yes. Designs can be adapted depending on customer needs,
+location, and project requirements.
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<section class="location">
+
+
+<h2>Our Locations</h2>
+
+
+<p>
+🇽🇰 InstaBuilt Europe<br>
+Street Victoria, Prishtina-Mitrovica Highway 12km, Kosovo
+</p>
+
+
+<p>
+🇺🇸 InstaBuilt North America<br>
+3500 S Dupont Hwy Dover, DE 19901 United States
+</p>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+© 2026 InstaBuilt | Sustainable Wooden Homes
+
+</footer>
+
+
+
+
+<script>
+
+
+function sendMessage(event){
+
+event.preventDefault();
+
+alert("Thank you! Your project request has been submitted.");
+
+}
+
+
+</script>
+
+
+
+</body>
+
+
+</html>
